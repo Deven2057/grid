@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid2</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+           
+            grid-gap: 10px;
+            
+        }
+        .items{
+            display: grid;
+            
+            /* ÷background-color: rgb(81, 198, 159); */
+            border-radius: 4px;
+            height: 800px;
+        }
+        .twoo{
+            /* display: grid; */
+            grid-template-rows: repeat(2,1fr);
+            grid-gap: 10px;
+           
+        }
+        .threee{
+            
+            grid-template-rows: repeat(3,1fr);
+            grid-gap: 10px;
+           
+        }
+        .fourr{
+            
+            grid-template-rows: repeat(4,1fr);
+            grid-gap: 10px;
+        }
+        .fivee{
+            grid-template-rows:repeat(5,1fr);
+            grid-gap: 10px;
+        }
+        .sixx{
+            grid-template-rows:repeat(6,1fr);
+            grid-gap: 10px;
+        }
+        .loop{
+            display: grid;
+            grid-template-rows:repeat(3,1fr);
+            grid-gap: 10px;
+        }
+        .one{
+            background-color: aquamarine;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items one">1 one is may</div>
+        <div class="items twoo">
+            <div class="one">2</div>
+            <div class="one">3</div>
+        </div>
+        <div class="items threee">
+            <div class="one">4</div>
+            <div class="one">5</div>
+            <div class="one">6</div>
+        </div>
+        <div class="items fourr">
+            <div class="one">7</div>
+            <div class="one">8</div>
+            <div class="one">9</div>
+            <div class="one">10</div>
+        </div>
+        <div class="items fivee">
+            <div class="one">11</div>
+            <div class="one">12</div>
+            <div class="one">13</div>
+            <div class="one">14</div>
+            <div class="one">15</div>
+        </div>
+        <div class="items sixx">
+            <div class="loop">
+                <div class="one">16</div>
+                <div class="one">17</div>
+                <div class="one">18</div>
+                <div class="one">19</div>
+                <div class="one">20</div> 
+            </div>
+            <div class="one">21</div>
+            <div class="one">22</div>
+            <div class="one">23</div>
+            <div class="one">24</div>
+            <div class="one">24</div>
+        </div>
+    </div>
+</body>
+</html>

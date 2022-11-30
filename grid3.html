@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid3</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .container
+        {
+            display: grid;
+           
+            grid-template-columns:200px auto ;
+            grid-gap: 10px;
+        }
+        
+        .items{
+            display: grid;
+            grid-gap: 10px;
+            
+           
+            
+           
+            
+        }
+        .nav{
+            background-color: yellowgreen;
+            height: 1000px;
+            padding: 20px;
+        }
+        
+        .header{
+            display: grid;
+            grid-template-rows: 100px auto 100px;
+            grid-gap: 10px;
+            
+        }
+
+        .head{
+            background-color: yellowgreen;
+            padding: 20px;
+        }
+        .art{
+            background-color: yellowgreen;
+            padding: 20px;
+        }
+        .foot{
+            background-color: yellowgreen;
+            padding: 20px;
+            
+        }
+        .article{
+            display: grid;
+            grid-template-columns: auto 150px;
+            
+            
+        }
+        .add
+        {
+            background-color: yellowgreen;
+            padding: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items nav">NAV</div>
+        <div class="items header">
+            <Div class="items head">Header</Div>
+            <div class="items article">
+                <div class=" items art">Article</div>
+                <div class="items add">Adds</div>
+            </div>
+            <div class="items footer">
+                    <div class="items foot">Footer</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
